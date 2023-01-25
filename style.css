@@ -1,0 +1,80 @@
+/* TEMPLATE */
+.buttonTemplate {
+  border-radius: 50px;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+}
+.addGap {
+  gap: 5px;
+}
+.buttonText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
+.buttonSmall {
+  height: 2.4em;
+  padding: 10px !important;
+  font-size: x-small;
+}
+.iconOnly {
+  padding: 12px;
+}
+.iconSmall {
+  padding: 6px;
+}
+
+/* COLOR THE BUTTONS */
+.blueButton {
+  background-color: #03a9f4;
+}
+.CC448A {
+  background-color: #cc448a;
+}
+.successButton {
+  background-color: #4caf50;
+}
+.dangerButton {
+  background-color: #f44336;
+}
+.orangeButton {
+  background-color: #ff9800;
+}
+.darkGreenButton {
+  background-color: #009688;
+}
+.whiteButton {
+  background-color: white;
+}
+.greyButton {
+  background-color: #ddd;
+}
+.purpleButton {
+  background-color: #9c27b0;
+}
+
+/* Called by id */
+#terugButton2 {
+  visibility: hidden;
+}
+#transparentButton{
+    background: transparent;
+    border: 0.5px solid rgb(78, 78, 78);
+}
+#filterButton:hover{
+    transition: 0.3s;
+    background-color: #3fc2ff;
+}
+
+/* For Specific Operations */
+.blackText {
+  color: black;
+}
