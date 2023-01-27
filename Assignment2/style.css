@@ -1,0 +1,105 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+table {
+  font-size: 14px;
+  width: 100%;
+}
+.tableDiv {
+  overflow-x: auto;
+}
+th {
+  background-color: #dcdcdc;
+  padding: 20px 15px;
+  text-align: left;
+}
+div.main {
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  background-color: #03a9f4;
+  width: auto;
+  padding: 10px 35px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+}
+.navbarButtons {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+p {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+td {
+  gap: 10px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #bbbbbb;
+}
+tr:hover {
+  background-color: #f7dc8d;
+  transition: 0.3s;
+}
+nav i {
+  color: white;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.footerDiv {
+  margin-top: 10px;
+  width: auto;
+  text-align: center;
+  color: #bbbbbb;
+}
+.footerButtons {
+  margin-top: 15px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  gap: 5px;
+}
+.disabled {
+  color: #bbbbbb;
+}
+button.number {
+  padding: 5px 11px 5px 11px;
+}
+button.number:hover {
+  background-color: #03a9f4;
+  border-radius: 50px;
+}
+.next {
+  cursor: pointer;
+}
+.toggleStyle {
+  display: none;
+}
+.collapsible{
+
+}
