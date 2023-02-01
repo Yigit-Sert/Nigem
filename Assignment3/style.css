@@ -1,0 +1,182 @@
+/* TEMPLATE */
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
+hr {
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.buttonTemplate {
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 6px 0 6px 0;
+  cursor: pointer;
+}
+.buttonWideBoxes {
+  width: 30%;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+.addGap {
+  gap: 5px;
+}
+.shadow {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.border {
+  border: 1px solid #03a9f4;
+} /* 
+.buttonText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+} */
+.buttonSmall {
+  height: 2.4em;
+  padding: 15px !important;
+  font-size: small;
+}
+.iconOnly {
+  padding: 12px;
+}
+.iconSmall {
+  padding: 6px;
+}
+.buttonWrapping {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+}
+/* ICON HIDING */
+.hiddenIcon {
+  display: none;
+}
+
+/* COLOR THE BUTTONS */
+.blueButton {
+  background-color: #03a9f4;
+}
+.CC448A {
+  background-color: #cc448a;
+}
+.successButton {
+  background-color: #4caf50;
+}
+.dangerButton {
+  background-color: #f44336;
+}
+.orangeButton {
+  background-color: #ff9800;
+}
+.darkGreenButton {
+  background-color: #009688;
+}
+.whiteButton {
+  background-color: white;
+}
+.greyButton {
+  background-color: #ddd;
+}
+.purpleButton {
+  background-color: #9c27b0;
+}
+.transparentButton {
+  background: transparent;
+  border: 0.5px solid #03a9f4;
+}
+
+/* Called by id */
+#filterButton:hover {
+  transition: 0.3s;
+  background-color: #3fc2ff;
+}
+
+/* Text Coloring */
+.blackText {
+  color: black;
+}
+.blueText {
+  color: #03a9f4;
+}
+.whiteText{
+  color: white;
+}
+
+/* Colored Icon */
+.blueIcon {
+  color: #03a9f4;
+}
+
+/************* FORM *************/
+
+div.main {
+  border-radius: 8px;
+  width: 40%;
+  margin-top: 15px;
+}
+
+nav {
+  display: flex;
+  background-color: #03a9f4;
+  padding: 10px 35px;
+  justify-content: flex-end;
+  border-radius: 8px 8px 0 0;
+}
+
+div.main div.form {
+  padding: 3%;
+}
+/* PROBLEM HERE */
+div.main div.form div.inARowDisplayed{
+  display: flex;
+  /* gap: 30%; */
+  /* justify-content: space-between; */
+  /* padding: 0 auto; */
+}
+div.main div.form div.inputBox div.labels {
+  margin-bottom: -13px;
+  width: fit-content;
+  padding: 0 5px;
+  margin-left: 20px;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  color: #555555;
+}
+div.main div.form div.inputBox input {
+  display: flex;
+  padding: 0 15px;
+  width: 93%;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #555555;
+  margin: auto;
+}
+/* PROBLEM HERE */
+div.main div.form div.topDownButtonsDiv{
+  width: 100%;
+  display: inline-flex;
+  margin: 10px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+div.main div.form div.topDownButtonsDiv button.topDownButtons{
+  width: 30%;
+  min-width: fit-content;
+  margin: 0 auto;
+}
