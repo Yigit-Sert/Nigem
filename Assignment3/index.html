@@ -15,8 +15,8 @@
     <script src="https://kit.fontawesome.com/4ec4d43c69.js" crossorigin="anonymous"></script>
     <!-- JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
@@ -27,30 +27,31 @@
     <div class="buttonWideBoxes">
         <button style="margin-bottom: 15px;" class="buttonTemplate blueButton addGap shadow">
             <i class="fa-solid fa-plus"></i>
-            <p class="buttonText">Klant toevoegen</p>
+            <p>Klant toevoegen</p>
         </button>
         <div class="buttonWrapping">
             <button class="buttonTemplate transparentButton blackText">
                 <i class="fa-solid fa-check hiddenIcon"></i>
-                <p class="buttonText">Contant</p>
+                <p>Contant</p>
             </button>
             <button class="buttonTemplate transparentButton blackText">
                 <i class="fa-solid fa-check hiddenIcon"></i>
-                <p class="buttonText">PIN</p>
+                <p>PIN</p>
             </button>
         </div>
         <div class="buttonWrapping">
             <button class="buttonTemplate transparentButton blackText">
                 <i class="fa-solid fa-check hiddenIcon"></i>
-                <p class="buttonText">iDeal QR</p>
+                <p>iDeal QR</p>
             </button>
             <button class="buttonTemplate transparentButton blackText">
                 <i class="fa-solid fa-check hiddenIcon"></i>
-                <p class="buttonText">iDeal SMS</p>
+                <p>iDeal SMS</p>
             </button>
         </div>
-        <button class="buttonTemplate transparentButton blackText">
-            <p class="buttonText">Contant/PIN</p>
+        <button id="ContantPIN" class="buttonTemplate transparentButton blackText">
+            <i class="fa-solid fa-check hiddenIcon"></i>
+            <p>Contant/PIN</p>
         </button>
         <hr>
         <button class="buttonTemplate addGap transparentButton blackText buttonSmall">
@@ -68,7 +69,7 @@
         <hr>
         <button class="buttonTemplate successButton  shadow">
             <i class="fa-solid fa-chevron-left"></i>
-            <p class="buttonText">Betalen</p>
+            <p>Betalen</p>
         </button>
     </div>
 
@@ -85,17 +86,17 @@
         </nav>
         <div class="form">
             <div class="topDownButtonsDiv">
-                <button class="buttonTemplate transparentButton blueText topDownButtons">
+                <button class="buttonTemplate transparentButton blueText topDownButtons Up">
                     <i class="fa-solid fa-check hiddenIcon"></i>
-                    <p class="buttonText">In de winkel</p>
+                    <p>In de winkel</p>
                 </button>
-                <button class="buttonTemplate transparentButton blueText topDownButtons">
+                <button class="buttonTemplate transparentButton blueText topDownButtons Up">
                     <i class="fa-solid fa-check hiddenIcon"></i>
-                    <p class="buttonText">Bezorgen</p>
+                    <p>Bezorgen</p>
                 </button>
-                <button class="buttonTemplate transparentButton blueText topDownButtons">
+                <button class="buttonTemplate transparentButton blueText topDownButtons Up">
                     <i class="fa-solid fa-check hiddenIcon"></i>
-                    <p class="buttonText">Afhalen</p>
+                    <p>Afhalen</p>
                 </button>
             </div>
             <div class="inputBox">
@@ -136,6 +137,9 @@
                     <label for="Tijdstip">Tijdstip</label><br>
                 </div>
                 <input id="Tijdstip" type="text">
+                <!-- <div class="iconPlacementInsideInput">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div> -->
             </div>
             <div class="inputBox">
                 <div class="labels">
@@ -148,19 +152,22 @@
                     <label for="Mailing">Mailing</label><br>
                 </div>
                 <input id="Mailing" type="text">
+                <!-- <div class="iconPlacementInsideInput">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div> -->
             </div>
-            <div class="topDownButtonsDiv">
-                <button style="margin-bottom: 15px;" class="buttonTemplate blueButton addGap shadow">
-                    <i class="fa-solid fa-plus"></i>
-                    <p class="buttonText">Opslaan</p>
+            <div class="topDownButtonsDiv Down">
+                <button id="opslaan" style="margin: unset;"
+                    class="buttonTemplate blueButton addGap shadow topDownButtons">
+                    <p>Opslaan</p>
                 </button>
-                <button class="buttonTemplate transparentButton blueText topDownButtons">
+                <button id="annuren" class="buttonTemplate transparentButton blueText topDownButtons">
                     <i class="fa-solid fa-check hiddenIcon"></i>
-                    <p class="buttonText">Annuren</p>
+                    <p>Annuren</p>
                 </button>
-                <button class="buttonTemplate transparentButton blueText topDownButtons">
+                <button id="reset" class="buttonTemplate transparentButton blueText topDownButtons">
                     <i class="fa-solid fa-check hiddenIcon"></i>
-                    <p class="buttonText">Reset</p>
+                    <p>Reset</p>
                 </button>
             </div>
         </div>

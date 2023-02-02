@@ -26,9 +26,10 @@ hr {
   cursor: pointer;
 }
 .buttonWideBoxes {
-  width: 30%;
+  width: 100%;
   border: 1px solid #ddd;
   padding: 15px;
+  max-width: 354px;
 }
 .addGap {
   gap: 5px;
@@ -38,23 +39,11 @@ hr {
 }
 .border {
   border: 1px solid #03a9f4;
-} /* 
-.buttonText {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: capitalize;
-} */
+}
 .buttonSmall {
   height: 2.4em;
   padding: 15px !important;
   font-size: small;
-}
-.iconOnly {
-  padding: 12px;
-}
-.iconSmall {
-  padding: 6px;
 }
 .buttonWrapping {
   display: flex;
@@ -70,29 +59,8 @@ hr {
 .blueButton {
   background-color: #03a9f4;
 }
-.CC448A {
-  background-color: #cc448a;
-}
 .successButton {
   background-color: #4caf50;
-}
-.dangerButton {
-  background-color: #f44336;
-}
-.orangeButton {
-  background-color: #ff9800;
-}
-.darkGreenButton {
-  background-color: #009688;
-}
-.whiteButton {
-  background-color: white;
-}
-.greyButton {
-  background-color: #ddd;
-}
-.purpleButton {
-  background-color: #9c27b0;
 }
 .transparentButton {
   background: transparent;
@@ -112,7 +80,7 @@ hr {
 .blueText {
   color: #03a9f4;
 }
-.whiteText{
+.whiteText {
   color: white;
 }
 
@@ -125,8 +93,9 @@ hr {
 
 div.main {
   border-radius: 8px;
-  width: 40%;
+  width: 100%;
   margin-top: 15px;
+  max-width: 678px;
 }
 
 nav {
@@ -140,12 +109,11 @@ nav {
 div.main div.form {
   padding: 3%;
 }
-/* PROBLEM HERE */
-div.main div.form div.inARowDisplayed{
+div.main div.form div.inARowDisplayed {
   display: flex;
-  /* gap: 30%; */
-  /* justify-content: space-between; */
-  /* padding: 0 auto; */
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
 }
 div.main div.form div.inputBox div.labels {
   margin-bottom: -13px;
@@ -160,23 +128,69 @@ div.main div.form div.inputBox div.labels {
 }
 div.main div.form div.inputBox input {
   display: flex;
-  padding: 0 15px;
-  width: 93%;
+  width: 100%;
   height: 44px;
   border-radius: 8px;
   border: 1px solid #555555;
-  margin: auto;
 }
-/* PROBLEM HERE */
-div.main div.form div.topDownButtonsDiv{
+
+.inARowDisplayed .inputBox {
   width: 100%;
-  display: inline-flex;
+  max-width: 300px;
+}
+/* CONTINUE HERE */
+div.main div.form div.inputBox div.iconPlacementInsideInput{
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  /* margin-top: -30px; */
+  color: #555555;
+}
+div.main div.form div.topDownButtonsDiv {
+  width: 100%;
+  display: flex;
   margin: 10px 0;
   gap: 10px;
   flex-wrap: wrap;
 }
-div.main div.form div.topDownButtonsDiv button.topDownButtons{
+
+div.main div.form div.topDownButtonsDiv button.topDownButtons {
   width: 30%;
   min-width: fit-content;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 601px) {
+  .topDownButtonsDiv button#opslaan {
+    flex: 5;
+  }
+  .topDownButtonsDiv button#annuren {
+    flex: 2;
+  }
+  .topDownButtonsDiv button#reset {
+    flex: 2;
+  }
+  /*  */
+  div.main div.form div.topDownButtonsDiv button.Up {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.main div.form div.topDownButtonsDiv {
+    width: 100%;
+  }
+  div.main div.form div.topDownButtonsDiv #opslaan {
+    width: 100%;
+  }
+  div.main div.form div.topDownButtonsDiv #annuren {
+    width: 45%;
+  }
+  div.main div.form div.topDownButtonsDiv #reset {
+    width: 45%;
+  }
+  /*  */
+  div.main div.form div.topDownButtonsDiv button.Up {
+    width: 100%;
+  }
 }
