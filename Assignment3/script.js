@@ -41,5 +41,4 @@ $(document).ready(function () {
     $(this).find("i").toggleClass("hiddenIcon active");
     $(this).siblings().children(".active").toggleClass("hiddenIcon active");
   });
-  //   Selecting Operations For Form
 });
