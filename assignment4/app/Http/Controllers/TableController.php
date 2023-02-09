@@ -25,4 +25,9 @@ class TableController extends Controller
         return view('read', compact('table'));
     }
 
+    public function home(){
+        $table = Table::query()->get();
+        return view('home', compact('table'));
+    }
+
 }

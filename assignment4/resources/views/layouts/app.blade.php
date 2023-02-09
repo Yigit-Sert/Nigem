@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NigemAssignment4</title>
+	<title>Layout Usage in Laravel</title>
 	<!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
                 <img id="pizzaLogo" src="./image/logo2.png">
             </div>
             <div class="pageNavbarHeaderRight">
+                <i class="fa-solid fa-bars hidden hiddenIcon"></i>
                 <img id="defaultlogo" src="./image/defaultlogo.png">
                 <div id="pageNavbarHeaderRightWrap" style="
                 display: flex;
@@ -46,7 +47,7 @@
                         <button class="buttonTemplate whiteButton shadow">
                             <i class="fa-solid fa-mobile-screen"></i>
                         </button>
-                        <button class="buttonTemplate shadow" style="background-color: #4CAF50;">
+                        <button id="geopend" class="buttonTemplate shadow" style="background-color: #4CAF50;">
                         <i class="fa-regular fa-circle-check"></i>
                             <p style="margin:0;">Geopend</p>
                         </button>
@@ -89,71 +90,12 @@
             <i class="fa-solid fa-gear"></i>
             Instellingen</div>
         </div>
-        <div class="pageContent">
-            <!-- CONTENT -->
-            <button id="terugButton" class="buttonTemplate blueButton shadow">
-                <p style="margin:0;">Terug</p>
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <nav>
-                <section>
-                    <p>Top producten popular</p>
-                </section>
-                <div class="navbarButtons" style="color:white">
-                    27-09-2022 00:00:00 ~ 23-11-2022 23:59:59
-                </div>
-            </nav>
-            <div class="tableDiv">
-                <table cellspacing="0">
-                    <tr>
-                        <th>Productnaam</th>
-                        <th>Verkocht</th>
-                        <th>Populariteit</th>
-                        <th>Omzet</th>
-                        <th>Percentage totaal</th>
-                    </tr>
-                    <!-- copy table elements -->
-                    @foreach($table as $_table)
-                    <tr>
-                        <td>{{ $_table->productnaam }}</td>
-                        <td>{{ $_table->verkocht }}</td>
-                        <td><button class="smallButton" style="background-color:#4CAF50; border:none; padding:0 10px; color:white;">{{ $_table->populariteit }} %</button></td>
-                        <td>€ {{ $_table->omzet }}</td>
-                        <td><button class="smallButton" style="background-color:#2196F3; border:none; padding:0 10px; color:white;">{{ $_table->percentageTotaal }} %</button></td>
-                    </tr>
-                    @endforeach
-                </table>
-                <footer>
-                    <div class="footerDiv">Toont 1 tot 1 van de 1 items</div>
-                    <div class="footerButtons">
-                        <button class="disabled">Vorige</button>
-                        <button class="number">1</button>
-                        <button class="number">2</button>
-                        <button class="number">3</button>
-                        <button class="next">Volgende</button>
-                    </div>
-                </footer>
-            </div>
-            <!-- CONTENT -->
-        </div>
+        <!--  -->
+        @yield('content')
+        <!--  -->
 	</div>
 
-	<script>
-		$(document).ready(function () {
-			$(".collapsible").click(function () {
-				$(".tableDiv, footer").slideToggle(400);
-				var collapseButton = document.getElementById("upDownArrowIcon");
-
-				if (collapseButton.className == "fa-solid fa-chevron-up") {
-					collapseButton.className = "fa-solid fa-chevron-down";
-					console.log("if statement launched");
-				} else {
-					collapseButton.className = "fa-solid fa-chevron-up";
-					console.log("if statement didnt launched");
-				}
-			});
-		});
-	</script>
+	@yield('js')
 </body>
 
 </html>

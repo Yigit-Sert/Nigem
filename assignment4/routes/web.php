@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [TableController::class, 'home']);
 Route::get('create', [TableController::class, 'create']);
 Route::get('read', [TableController::class, 'read']);

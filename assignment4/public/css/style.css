@@ -92,13 +92,27 @@ button {
 }
 .whiteButton{
     background-color: white;
-    /* padding: 15px; */
     width: 44px;
     height: 44px;
     color: #03A9F4;
 }
 .redButton{
     background-color: #F44336;
+}
+@media only screen and (max-width: 1070px) {
+    .redButton{
+        height: 44px;
+    }
+    .redButton p {
+        display: none;
+    }
+    #geopend{
+        height: 44px;
+        width: 44px;
+    }
+    #geopend p{
+        display: none;
+    }
 }
 .footerDiv {
     margin-top: 10px;
@@ -154,7 +168,6 @@ button.number:hover {
     background: linear-gradient(90deg, #FFFFFF 0%, #15A2FE 100%);
     display: flex;
     align-items: center;
-    /* background: transparent; */      /* might be another option to use */
 }
 .pageNavbar div.pageNavbarHeaderRight{
     background: linear-gradient(90deg, #15a2fe 0%, #e42c8c 100%);
@@ -164,7 +177,6 @@ button.number:hover {
     align-items: center;
     justify-content: space-between;
 }
-/*  */
 .pageNavbarHeaderRightWrap{
     display: flex;
     width: 100%;
@@ -183,8 +195,35 @@ button{
 }
 .pageLeftMenu{
     width: 16%;
-    height: 100%;
+    height: fill;
     background-color: #000000;
+}
+.hidden{
+    display: none;
+}
+.hiddenIcon{
+    margin-left: 2%;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;;
+}
+@media only screen and (max-width: 950px) {
+    .pageLeftMenu{
+        display: none;
+    }
+    .pageNavbarHeaderLeft{
+        display: none !important;
+    }
+    .pageNavbarHeaderRight{
+        width: 100% !important;
+    }
+    .hidden{
+        display: flex;
+    }
+
 }
 .sidebarElement{
     align-items: center;
@@ -203,7 +242,7 @@ button{
 .pageContent {
     flex: auto;
     padding: 30px;
-    height: auto;
+    height: 100%;
     z-index: 1;
     background: linear-gradient(90deg, rgba(21, 162, 254, 0.6) 0%, rgba(228, 44, 140, 0.6) 100%), #FFFFFF;
 }
