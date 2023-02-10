@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Layout Usage in Laravel</title>
-	<!-- FONT -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Usage in Laravel</title>
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
-	<!-- ICONS -->
-	<script src="https://kit.fontawesome.com/4ec4d43c69.js" crossorigin="anonymous"></script>
-	<!-- JS CDN -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/4ec4d43c69.js" crossorigin="anonymous"></script>
+    <!-- JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
-	<div class="main">
+    <div class="main">
         <div class="pageNavbar shadow">
             <div class="pageNavbarHeaderLeft shadow">
                 <img id="pizzaLogo" src="./image/logo2.png">
@@ -28,7 +28,8 @@
             <div class="pageNavbarHeaderRight">
                 <i class="fa-solid fa-bars hidden hiddenIcon"></i>
                 <img id="defaultlogo" src="./image/defaultlogo.png">
-                <div id="pageNavbarHeaderRightWrap" style="
+                <div id="pageNavbarHeaderRightWrap"
+                    style="
                 display: flex;
                 width: 100%;
                 flex-direction: row;
@@ -48,7 +49,7 @@
                             <i class="fa-solid fa-mobile-screen"></i>
                         </button>
                         <button id="geopend" class="buttonTemplate shadow" style="background-color: #4CAF50;">
-                        <i class="fa-regular fa-circle-check"></i>
+                            <i class="fa-regular fa-circle-check"></i>
                             <p style="margin:0;">Geopend</p>
                         </button>
                         <button class="buttonTemplate whiteButton shadow">
@@ -63,39 +64,71 @@
         </div>
         <div class="pageLeftMenu">
             <div class="sidebarElement">
-            <i class="fa-solid fa-chart-simple"></i>
-            Statistieken</div>
+                <i class="fa-solid fa-chart-simple"></i>
+                Statistieken
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-list-check"></i>
-            Bestellingen</div>
+                <i class="fa-solid fa-list-check"></i>
+                Bestellingen
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-cash-register"></i>
-            Kassa</div>
+                <i class="fa-solid fa-cash-register"></i>
+                Kassa
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-user-group"></i>
-            Klanten</div>
+                <i class="fa-solid fa-user-group"></i>
+                Klanten
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-wallet"></i>
-            Financieel</div>
+                <i class="fa-solid fa-wallet"></i>
+                Financieel
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-sheet-plastic"></i>
-            Menukaart</div>
+                <i class="fa-solid fa-sheet-plastic"></i>
+                Menukaart
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-flag"></i>
-            Reclame</div>
+                <i class="fa-solid fa-flag"></i>
+                Reclame
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-box"></i>
-            Voorraad</div>
+                <i class="fa-solid fa-box"></i>
+                Voorraad
+            </div>
             <div class="sidebarElement">
-            <i class="fa-solid fa-gear"></i>
-            Instellingen</div>
+                <i class="fa-solid fa-gear"></i>
+                Instellingen
+            </div>
         </div>
         <!--  -->
         @yield('content')
         <!--  -->
-	</div>
-
-	@yield('js')
+    </div>
+    <script>
+        $('.hiddenIcon').click(function() {
+            // $('.pageLeftMenu').css( "position", "absolute" );
+            // $('.pageLeftMenu').css( "zIndex", 4 );
+            $('.pageLeftMenu').toggle("slide");
+            // $('.pageLeftMenu').attr({width: "150", height: "100"});
+        });
+        /* var state = "minimized";
+        //Check if navbar is expanded or minimized and handle
+        $('.hiddenIcon').click(function() {
+            if (state == "minimized") {
+                $('.pageLeftMenu').removeClass("hidden");
+                $('.pageLeftMenu').toggle("slide");
+                state = "expanded";
+            } else {
+                if (state == "expanded") {
+                    $('.pageLeftMenu').hide("slide", {
+                        direction: "left"
+                    }, 1000);
+                    state = "minimized";
+                }
+            }
+        }) */
+    </script>
+    @yield('js')
 </body>
 
 </html>
