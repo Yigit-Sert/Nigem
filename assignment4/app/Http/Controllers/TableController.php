@@ -30,4 +30,8 @@ class TableController extends Controller
         return view('home', compact('table'));
     }
 
+    public function bestellingen(){
+        $table = Table::query()->get();
+        return view('bestellingen', compact('table'));
+    }
 }

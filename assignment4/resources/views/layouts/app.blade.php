@@ -102,6 +102,7 @@
         </div>
         <!--  -->
         @yield('content')
+        @yield('bestellingen')
         <!--  -->
     </div>
     <script>
