@@ -102,7 +102,7 @@
         </div>
         <!--  -->
         @yield('content')
-        @yield('bestellingen')
+        <!-- @yield('bestellingen') -->
         <!--  -->
     </div>
     <script>

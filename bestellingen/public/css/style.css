@@ -1,0 +1,266 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+table {
+    font-size: 14px;
+    width: 100%;
+}
+.tableDiv {
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+}
+th {
+    background-color: #dcdcdc;
+    padding: 20px 15px;
+    text-align: left;
+}
+div.main {
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttonTemplate {
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 6px 0 6px 0;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    background-color: #03a9f4;
+    width: auto;
+    padding: 10px 35px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+}
+.navbarButtons {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+p {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+td {
+    gap: 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+tr:hover {
+    background-color: #f7dc8d;
+    transition: 0.3s;
+}
+nav i {
+    color: white;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    gap: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.whiteButton {
+    background-color: white;
+    width: 44px;
+    height: 44px;
+    color: #03a9f4;
+}
+.redButton {
+    background-color: #f44336;
+}
+@media only screen and (max-width: 1070px) {
+    .redButton {
+        height: 44px;
+    }
+    .redButton p {
+        display: none;
+    }
+    #geopend {
+        height: 44px;
+        width: 44px;
+    }
+    #geopend p {
+        display: none;
+    }
+}
+.footerDiv {
+    margin-top: 10px;
+    width: auto;
+    text-align: center;
+    color: #bbbbbb;
+    background-color: white;
+}
+.footerButtons {
+    margin-top: 15px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    gap: 5px;
+    background-color: white;
+}
+.disabled {
+    color: #bbbbbb;
+}
+button.number {
+    padding: 5px 11px 5px 11px;
+}
+button.number:hover {
+    background-color: #03a9f4;
+    border-radius: 50px;
+}
+.next {
+    cursor: pointer;
+}
+.toggleStyle {
+    display: none;
+}
+.blueButton {
+    background-color: #03a9f4;
+}
+.shadow {
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+/* Main Structure Classes */
+.pageNavbar {
+    height: 84px;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+.pageNavbar div.pageNavbarHeaderLeft {
+    z-index: 3;
+    width: 16%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff 0%, #15a2fe 100%);
+    display: flex;
+    align-items: center;
+}
+.pageNavbar div.pageNavbarHeaderRight {
+    background: linear-gradient(90deg, #15a2fe 0%, #e42c8c 100%);
+    display: flex;
+    width: 84%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.pageNavbarHeaderRightWrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+button {
+    width: auto;
+    padding: 10px 20px;
+}
+.pageNavbarHeaderRightInside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2%;
+    gap: 8px;
+}
+.pageLeftMenu {
+    width: 16%;
+    height: fill;
+    background-color: #000000;
+}
+.hidden {
+    display: none;
+}
+.hiddenIcon {
+    margin-left: 2%;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 950px) {
+    .pageLeftMenu {
+        display: none;
+        width: 30%;
+    }
+    .pageNavbarHeaderLeft {
+        display: none !important;
+    }
+    .pageNavbarHeaderRight {
+        width: 100% !important;
+    }
+    .hidden {
+        display: flex;
+    }
+}
+.sidebarElement {
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px;
+    font-weight: 600;
+    padding-left: 10%;
+    gap: 10px;
+}
+.sidebarElement:hover {
+    background-color: #03a9f4;
+}
+.pageContent {
+    flex: auto;
+    padding: 30px;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(
+            90deg,
+            rgba(21, 162, 254, 0.6) 0%,
+            rgba(228, 44, 140, 0.6) 100%
+        ),
+        #ffffff;
+}
+
+/* Called By Id */
+#terugButton {
+    width: auto;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+#pizzaLogo {
+    margin-left: 20%;
+}
+#defaultlogo {
+    margin-left: 2%;
+}
