@@ -1,0 +1,418 @@
+/*Bestellingen*/
+/*Section*/
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+/*First Row*/
+.bestellingen-first-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.bestellingen-buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 44px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+
+.bestellingen-left-buttons-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0px;
+    width: 100%;
+    max-width: 726px;
+    height: 44px;
+}
+
+.bestellingen-left-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 187px;
+    height: 44px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+}
+
+.bestellingen-right-buttons-div {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 15px;
+    width: 100%;
+    max-width: 340px;
+    height: 44px;
+}
+
+.bestellingen-right-buttons-div p {
+    width: 100%;
+    max-width: 139px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+}
+
+.bestellingen-right-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    width: 100%;
+    max-width: 179px;
+    height: 44px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+}
+
+.bestellingen-left-right-buttons-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 146px;
+    height: 44px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+    background-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.bestellingen-left-right-buttons-div .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 44px;
+    height: 44px;
+    background: #03A9F4;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+}
+
+.bestellingen-left-right-buttons-div .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 44px;
+    height: 44px;
+    background: #03A9F4;
+    border-radius: 0px 50px 50px 0px;
+    border: none;
+}
+
+.bestellingen-button-text {
+    width: 100%;
+    max-width: 79px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bestellingen-button-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 38px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.bestellingen-cards-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 100%;
+    max-width: 952px;
+    margin-left: 40px;
+}
+
+.card-div {
+    position: relative;
+    width: 100%;
+    max-width: 314px;
+    height: 138px;
+}
+
+.left-upper-corner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 28px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+}
+
+.left-upper-corner div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 28px;
+    height: 28px;
+    background: #DDDDDD;
+    border-radius: 50px;
+    border: none;
+}
+
+.left-upper-corner p {
+    width: 100%;
+    max-width: 8px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #333333;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: absolute;
+    height: 114px;
+    left: 14px;
+    right: 0px;
+    top: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    max-width: 124px;
+}
+
+.left-side p {
+    width: 100%;
+    max-width: 117px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #3F51B5;
+}
+
+.left-side div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 100%;
+    max-width: 124px;
+    height: 28px;
+}
+
+.left-side div button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 58px;
+    height: 28px;
+    background: #4CAF50;
+    border-radius: 50px;
+    border: none;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    width: 100%;
+    max-width: 104px;
+}
+
+.right-side-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 5px;
+}
+
+.right-side-left div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    height: 28px;
+    background: #03A9F4;
+    border-radius: 50px;
+    border: none;
+}
+
+.right-side-left div p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.right-side-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+
+.right-side-right div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5px;
+    width: 28px;
+    height: 28px;
+    background: #E91E63;
+    border-radius: 50px;
+    border: none;
+}
+
+/*#First Row*/
+/*Second Row*/
+
+.bestellingen-second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.bestellingen-second-row button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-right: 40px;
+    width: 100%;
+    max-width: 185px;
+    height: 44px;
+    background: #03A9F4;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+}
+
+.bestellingen-second-row button p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/*#Second Row*/
+/*#Section*/
+/*Responsive*/
+
+@media screen and (max-width: 1400px){
+    .bestellingen-buttons-div{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .bestellingen-cards-div{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .bestellingen-cards-div{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .column-flex{
+        height: 100vh;
+    }
+
+    .bestellingen-buttons-div {
+        height: 100%;
+        gap: 80px;
+    }
+
+    .bestellingen-left-buttons-div {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bestellingen-second-row{
+        margin-top: 40px;
+    }
+
+    .bestellingen-buttons-div {
+        gap: 200px;
+    }
+
+    .bestellingen-right-buttons{
+        height: 70px;
+        align-items: center;
+    }
+}
+
+/*#Responsive*/
+/*#Bestellingen*/
