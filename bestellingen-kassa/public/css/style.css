@@ -553,7 +553,7 @@ hr {
 
     .nav-right-right {
         gap: 5px;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
     }
 
     .nav-responsive-sidebar {

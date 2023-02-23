@@ -371,7 +371,7 @@
         flex-wrap: wrap;
         gap: 10px;
     }
-    
+
     .bestellingen-cards-div{
         margin-top: 20px;
     }
@@ -381,6 +381,17 @@
     .bestellingen-cards-div{
         flex-direction: column;
         gap: 50px;
+        align-items: center;
+    }
+    .bestellingen-second-row{
+        padding-top: 67px;
+        justify-content: center;
+    }
+    .bestellingen-second-row button{
+        margin: 0;
+    }
+    .bestellingen-cards-div{
+        margin-left: 0;
     }
 }
 
@@ -395,7 +406,7 @@
     }
 
     .bestellingen-left-buttons-div {
-        flex-wrap: wrap;
+        display: none;
     }
 }
 
