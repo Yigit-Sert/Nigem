@@ -3,6 +3,9 @@
 @section('title')
     Kassa
 @endsection
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/kassa.css') }}">
+@endsection
 
 @section('section')
     <div class="section-left">
